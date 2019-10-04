@@ -45,8 +45,8 @@ You can choose either to clone the solution or downloads it as a zip file.
 
 ![alt text](https://github.com/mgroupntua/MSolve.Edu/blob/master/Images/CloneOrDownload.png "1")
 
-2. Click **Download ZIP** option. **MSolve.IGA** will be downloaded as a ZIP file.
+2. Click **Download ZIP** option. **MSolve.Stochastic** will be downloaded as a ZIP file.
 
 3. Extract the ZIP file to the folder of choice.
 
-4. Double click on **MSolve.IGA.sln** file to open the code with Visual Studio
+4. Double click on **MSolve.Stochastic.sln** file to open the code with Visual Studio
