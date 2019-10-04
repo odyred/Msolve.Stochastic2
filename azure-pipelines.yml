@@ -33,7 +33,7 @@ steps:
     SonarCloud: 'SonarCloud'
     organization: 'mgroupntua'
     scannerMode: 'MSBuild'
-    projectKey: 'MSolve.Stochastic'
+    projectKey: 'MSolve.Stohastic'
 
 
 - task: DotNetCoreCLI@2
