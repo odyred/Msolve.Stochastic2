@@ -1,4 +1,4 @@
-﻿using MGroup.FEM.Elements;
+using MGroup.FEM.Elements;
 using MGroup.FEM.Entities;
 using MGroup.MSolve.Discretization.FreedomDegrees;
 using MGroup.MSolve.Discretization.Loads;
@@ -7,8 +7,11 @@ using MGroup.Stochastic.Structural.StochasticRealizers;
 
 namespace MGroup.Stochastic.Structural
 {
+	/// <summary>A class building a model with uncertain parameters.</summary>
     public class ModelBuilder
     {
+	    /// <summary>A method that specifies an uncertain parameter realizer, a stochastic domain mapper and the current iteration
+	    /// and returns the current model instantiation.</summary>
         public Model GetModel(RandomVariable randomVariable, IStochasticDomainMapper domainMapper, int iteration)
         {
             var m = new Model();

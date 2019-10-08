@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using MGroup.Stochastic.Interfaces;
 using Troschuetz.Random.Distributions.Continuous;
 
@@ -128,6 +128,7 @@ namespace MGroup.Stochastic.Structural.StochasticRealizers
             return MeanValue / (1 + randomCoefficient);
         }
 
+		/// <summary>Resets the generation of a sample function.</summary>
         public void ResetSampleGeneration()
         {
             phi = new double[frequencyIntervals];

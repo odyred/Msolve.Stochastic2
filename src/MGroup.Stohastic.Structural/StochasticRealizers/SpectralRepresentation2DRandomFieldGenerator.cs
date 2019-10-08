@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using MGroup.Stochastic.Interfaces;
 using Troschuetz.Random.Distributions.Continuous;
 
@@ -100,6 +100,7 @@ namespace MGroup.Stochastic.Structural.StochasticRealizers
             period = 2d * Math.PI / dk;
         }
 
+        /// <summary>Calculates derivative at a given point.</summary>
         public double[] GetDerivative(IStochasticDomainMapper domainMapper, double[] parameters)
         {
             double[] stochasticDomainPoint = domainMapper.Map(parameters);
@@ -125,6 +126,11 @@ namespace MGroup.Stochastic.Structural.StochasticRealizers
 
         }
 
+        /// <summary>Realizes a sample function for respective stochastic domain mapper and parameters.</summary>
+        /// <param name="iteration">The iteration.</param>
+        /// <param name="domainMapper">The domain mapper.</param>
+        /// <param name="parameters">The parameters.</param>
+        /// <returns></returns>
         public double Realize(int iteration, IStochasticDomainMapper domainMapper, double[] parameters)
         {
             ResetGeneration = (PreviousIteration != iteration);
@@ -147,6 +153,7 @@ namespace MGroup.Stochastic.Structural.StochasticRealizers
             return randomCoefficient;
         }
 
+        /// <summary>Resets the generation of a sample function.</summary>
         public void ResetSampleGeneration()
         {
             phi1 = new double[frequencyIntervals, frequencyIntervals];
